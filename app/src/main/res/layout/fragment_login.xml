@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".LoginFrament">
+
+        <TextView
+            android:id="@+id/tv_login_message_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_horizontal"
+            android:text="Informe seu email para receber sua senha."
+            android:textSize="24dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/user_conteiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16sp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="User" />
+
+            <EditText
+                android:id="@+id/et_login_user"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:tooltipText="Informe usuario" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_conteiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:tooltipText="Informe sua senha" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_conteiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/et_login_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:tooltipText="Type your email" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16sp"
+            android:text="Login"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_recover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16sp"
+            android:text="Send"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Forgot password?" />
+
+    </LinearLayout>
+</layout>
